@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    background: radial-gradient(ellipse at center, #000 0%, #111 100%);
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .solar-system {
+    position: relative;
+    width: 400px;
+    height: 400px;
+  }
+  
+  .sun {
+    width: 60px;
+    height: 60px;
+    background: radial-gradient(circle, yellow, orange);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 30px 10px rgba(255, 165, 0, 0.5);
+  }
+  
+  /* Orbit base */
+  .orbit {
+    position: absolute;
+    border: 1px dashed rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Planets */
+  .planet {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+  }
+  
+  /* Orbit Sizes */
+  .orbit1 {
+    width: 120px;
+    height: 120px;
+    animation: rotate 6s linear infinite;
+  }
+  .orbit2 {
+    width: 200px;
+    height: 200px;
+    animation: rotate 10s linear infinite;
+  }
+  .orbit3 {
+    width: 280px;
+    height: 280px;
+    animation: rotate 14s linear infinite;
+  }
+  
+  /* Planet Sizes & Colors */
+  .planet1 {
+    width: 15px;
+    height: 15px;
+    background: #2e8b57;
+  }
+  .planet2 {
+    width: 20px;
+    height: 20px;
+    background: #1e90ff;
+  }
+  .planet3 {
+    width: 25px;
+    height: 25px;
+    background: #8a2be2;
+  }
+  
+  /* Rotation animation */
+  @keyframes rotate {
+    from {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+  
