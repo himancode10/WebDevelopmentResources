@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animated Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">MyAnimatedSite</div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Welcome to My Animated Website</h1>
+    <p>Experience smooth animations and interactive design.</p>
+  </section>
+
+  <section class="content">
+    <h2>Our Services</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Web Design</h3>
+        <p>Creating responsive and user-friendly websites.</p>
+      </div>
+      <div class="card">
+        <h3>SEO Optimization</h3>
+        <p>Improving your website's visibility on search engines.</p>
+      </div>
+      <div class="card">
+        <h3>Digital Marketing</h3>
+        <p>Enhancing your online presence through targeted campaigns.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 MyAnimatedSite | Designed with ❤️</p>
+    <button id="scrollToTopBtn">↑</button>
+  </footer>
+
+  <script>
+    const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+    window.onscroll = () => {
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        scrollToTopBtn.style.display = 'block';
+      } else {
+        scrollToTopBtn.style.display = 'none';
+      }
+    };
+    scrollToTopBtn.onclick = () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+  </script>
+</body>
+</html>
