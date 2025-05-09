@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Animated Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">MyInteractiveSite</div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h1 class="typing-effect">Welcome to My Interactive Website</h1>
+    <p>Explore our services and learn more about us.</p>
+  </section>
+
+  <section id="about" class="content">
+    <h2>About Us</h2>
+    <p>We are a team of passionate developers creating innovative solutions.</p>
+  </section>
+
+  <section id="services" class="content">
+    <h2>Our Services</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Web Development</h3>
+        <p>Building responsive and user-friendly websites.</p>
+      </div>
+      <div class="card">
+        <h3>SEO Optimization</h3>
+        <p>Improving your website's visibility on search engines.</p>
+      </div>
+      <div class="card">
+        <h3>Digital Marketing</h3>
+        <p>Enhancing your online presence through targeted campaigns.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="content">
+    <h2>Contact Us</h2>
+    <p>Get in touch with us for more information.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 MyInteractiveSite | Designed with ❤️</p>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const typingEffect = document.querySelector('.typing-effect');
+      const text = typingEffect.textContent;
+      typingEffect.textContent = '';
+      let index = 0;
+      const interval = setInterval(() => {
+        typingEffect
