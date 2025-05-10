@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Prompt UI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <button id="openPromptBtn" class="btn">Open Prompt</button>
+    <div id="promptBox" class="prompt-box">
+      <div class="prompt-header">
+        <h2>Enter Your Name</h2>
+        <button id="closePromptBtn" class="close-btn">&times;</button>
+      </div>
+      <input type="text" id="userName" class="input-field" placeholder="Your name...">
+      <button id="submitBtn" class="submit-btn">Submit</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
